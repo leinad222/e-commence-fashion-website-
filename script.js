@@ -62,3 +62,10 @@ btn.textContent = 'Message queued';
 btn.disabled = true;
 setTimeout(()=>{btn.textContent='Send message';btn.disabled=false},2500);
 }));
+const menu = document.querySelector("#menu");
+const navbar = document.querySelector(".navbar");
+
+menu.onclick = () => {
+    navbar.classList.toggle("active");
+};
+

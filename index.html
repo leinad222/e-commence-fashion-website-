@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Website</title>
+    <title>Nouveau Mode' — Fashion Website</title>
 
     <!-- ICONS & STYLES -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
@@ -13,9 +13,10 @@
 </head>
 
 <body>
+
     <!-- HEADER -->
     <header class="header">
-        <a href="#" class="logo"> Noveau Mode'</a>
+        <a href="index.html" class="logo">Noveau Mode'</a>
 
         <nav class="navbar">
             <a href="index.html" class="active">Home</a>
@@ -23,6 +24,7 @@
             <a href="about&contact.html">Contact</a>
         </nav>
 
+        <!-- Mobile menu icon -->
         <div id="menu" class="fas fa-bars"></div>
     </header>
 
@@ -36,7 +38,7 @@
                         <div class="content">
                             Up to <span>75% off</span>
                             <h3>New Fashion Collection</h3>
-                            <a href="#" class="btn">Shop Now</a>
+                            <a href="#shop" class="btn">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -46,7 +48,7 @@
                         <div class="content">
                             Up to <span>75% off</span>
                             <h3>New Fashion Collection</h3>
-                            <a href="#" class="btn">Shop Now</a>
+                            <a href="#shop" class="btn">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +58,7 @@
                         <div class="content">
                             Up to <span>75% off</span>
                             <h3>New Fashion Collection</h3>
-                            <a href="#" class="btn">Shop Now</a>
+                            <a href="#shop" class="btn">Shop Now</a>
                         </div>
                     </div>
                 </div>
@@ -67,19 +69,19 @@
     </section>
 
     <!-- INSTAGRAM SCROLLER -->
-    <div class="section_container ins_container" id="ins">
+    <div class="section_container ins_container">
         <div class="ins_flex">
-            <img src="images/f1.jpg" alt="">
-            <img src="images/f2.jpg" alt="">
-            <img src="images/f3.jpg" alt="">
-            <img src="images/f5.jpg" alt="">
-            <img src="images/f6.jpg" alt="">
-            <img src="images/f7.jpg" alt="">
-            <img src="images/n1.jpg" alt="">
-            <img src="images/n2.jpg" alt="">
-            <img src="images/n3.jpg" alt="">
-            <img src="images/n4.jpg" alt="">
-            <img src="images/n5.jpg" alt="">
+            <img src="images/f1.jpg" alt>
+            <img src="images/f2.jpg"alt>
+            <img src="images/f3.jpg"alt>
+            <img src="images/f5.jpg"alt>
+            <img src="images/f6.jpg"alt>
+            <img src="images/f7.jpg"alt>
+            <img src="images/n1.jpg"alt>
+            <img src="images/n2.jpg"alt>
+            <img src="images/n3.jpg"alt>
+            <img src="images/n4.jpg"alt>
+            <img src="images/n5.jpg"alt>
         </div>
     </div>
 
@@ -94,7 +96,7 @@
                     <a href="#" class="btn">Order Now</a>
                 </div>
                 <div class="image">
-                    <img src="images/sl3.png" alt="Product 1">
+                    <img src="images/sl3.png" alt="">
                 </div>
                 <div class="price">$49.99</div>
                 <div class="content">
@@ -110,7 +112,7 @@
                     <a href="#" class="btn">Order Now</a>
                 </div>
                 <div class="image">
-                    <img src="images/sl1.png" alt="Casual Dress">
+                    <img src="images/sl1.png" alt="">
                 </div>
                 <div class="price">$30.99</div>
                 <div class="content">
@@ -126,7 +128,7 @@
                     <a href="#" class="btn">Order Now</a>
                 </div>
                 <div class="image">
-                    <img src="images/sl4.png" alt="Casual Dress">
+                    <img src="images/sl4.png" alt="">
                 </div>
                 <div class="price">$30.99</div>
                 <div class="content">
@@ -175,6 +177,7 @@
         <h1 class="heading">Best Sell</h1>
 
         <div class="box-container">
+
             <div class="box">
                 <div class="icons">
                     <a href="order.html" class="btn">More Details</a>
@@ -229,36 +232,37 @@
     <section class="timer-banner" style="background-color:#e3e7f3">
         <div class="time" style="background: url(images/offer.png) center center / cover no-repeat;">
             <div class="insidemain">
-                <br>
+
                 <div class="title enddate">
-                    <span>Exclusive Offer</span><br>
+                    <span>Exclusive Offer</span>
                     <h2 id="head">17 November 2025 10:00am</h2>
-                </div>
+                        <div class="inp">
+</div>
 
-                <div class="inp">
-                    <div class="infield">
-                        <input type="text" value="0"><br>
-                        <h3>Days</h3>
-                    </div>
 
-                    <div class="infield">
-                        <input type="text" value="0"><br>
-                        <h3>Hours</h3>
-                    </div>
-
-                    <div class="infield">
-                        <input type="text" value="0"><br>
-                        <h3>Min</h3>
-                    </div>
-
-                    <div class="infield">
-                        <input type="text" value="0"><br>
-                        <h3>Sec</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+    
     </section>
 
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        // Mobile Menu Toggle
+        const menu = document.querySelector("#menu");
+        const navbar = document.querySelector(".navbar");
+
+        menu.onclick = () => {
+            navbar.classList.toggle("active");
+        };
+
+        // Swiper JS
+        var swiper = new Swiper(".home-slider", {
+            loop: true,
+            grabCursor: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+        });
+    </script>
+
 </body>
+
 </html>

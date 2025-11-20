@@ -422,4 +422,148 @@ aside .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 
 .comment-form button{background:linear-gradient(90deg,var(--accent),var(--accent-dark));color:#fff;padding:10px 14px;border:0;border-radius:10px;cursor:pointer}
 
 
-footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+@media (max-width: 480px) {
+
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    padding: 1rem 5%;
+  }
+
+  #menu {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    padding: 2rem 0;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    font-size: 2rem;
+    margin: 1.2rem 0;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* HOME SLIDER */
+  .home-slider .box {
+    min-height: 40rem;
+    border-radius: 0;
+  }
+
+  .home-slider .content h3 {
+    font-size: 2.4rem;
+  }
+
+  /* SHOP GRID */
+  .sell .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sell .box img {
+    width: 180px;
+    height: 180px;
+  }
+
+  /* BANNERS */
+  .banner-container {
+    flex-direction: column;
+  }
+
+  /* TIMER */
+  .inp {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .infield input {
+    width: 55px;
+    height: 55px;
+    font-size: 1.6rem;
+  }
+
+  /* ABOUT & CONTACT */
+  .grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-card {
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
+@media (max-width: 900px) {
+
+  html {
+    font-size: 55%;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .sell .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-container {
+    flex-wrap: wrap;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-card {
+    position: static;
+  }
+}
+@media (max-width: 1200px) {
+
+  html {
+    font-size: 58%;
+  }
+
+  .sell .box-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .banner {
+    flex: 1 1 45%;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
